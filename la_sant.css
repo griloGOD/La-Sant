@@ -22,20 +22,40 @@
 }
 
 .js-item-product {
-	background-color: rgba(92, 6, 26, 1);
-	border-radius: .5rem;
+	background-color: rgba(146, 33, 58, 1);
+	border-radius: .7rem;
 	overflow: hidden;
-	transition: transform .3s ease-in-out;
 	width: 100%;
 	flex-direction: column;
+	transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
 }
 
-.js-item-product:hover {
-	transform: translateY(-1rem);
+.item-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+	color: #FFFFFF;
 }
 
-.js-product-item-image-container-private {
-	border-radius: .5rem;
+.payment-discount-price-product-container {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+	color: #FFFFFF;
+}
+
+
+.item-description .item-name {
+    line-height: 1.3;    
+    min-height: 2.6em;
+    color: #FFFFFF; 
+}
+
+@media (min-width: 768px) {
+	.js-item-product:hover {
+		transform: translateY(-1rem);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, .3);
+	}
 }
 
 @media (max-width:767px) {
