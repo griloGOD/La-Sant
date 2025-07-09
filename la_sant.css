@@ -22,7 +22,7 @@
 }
 
 .js-item-product {
-	background-color: rgba(146, 33, 58, 1);
+	background-color: rgba(55, 4, 16, 1);
 	border-radius: .7rem;
 	overflow: hidden;
 	width: 100%;
@@ -35,7 +35,7 @@
 	font-family: "Montserrat", sans-serif;
 	font-size: 1.25rem;
 	font-weight: 700;
-	color: #fff;
+	color: #0bdd44;
 }
 
 .payment-discount-price-product-container {
@@ -50,17 +50,63 @@
 	color: #fff;
 }
 
-.template-home .js-banners.container-fluid {
-    max-width: 1200px;  
-    margin-right: auto;
-    padding-left: 1rem;  
-    padding-right: 1rem; 
+.item-description {
+	background-color: rgba(55, 4, 16, 1);
 }
 
-.template-home .js-textbanner.textbanner{
+.template-home .js-banners.container-fluid {
+	max-width: 1200px;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.template-home .js-textbanner.textbanner {
 	border-radius: .7rem;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
-} 
+}
+
+.textbanner-text.over-image {
+	background: rgba(253, 93, 61, 1);
+}
+
+.js-products-sale-col {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section-featured-home {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.js-item-quickshop {
+        min-height: 30px; 
+	text-align: center; 
+}
+
+.js-product-form.d-inline-block{
+	padding: 10px 40px;
+	display: block;        
+	text-align: center;
+}
+
+.js-item-quickshop .js-addtocart.btn {
+	padding: 10px 40px;
+	font-size: 0.7rem;
+	font-weight: bold;
+	display: block;        
+	text-align: center;
+	border-radius: 8px; 
+	margin-bottom: 5px;
+        background-color: rgba(253, 93, 61, 1);
+}
+
+.js-compare-price-display.price-compare{
+	color: #0bdd44;
+}
 
 @media (min-width:768px) {
 	.template-home .js-item-product:hover {
