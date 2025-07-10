@@ -83,29 +83,31 @@
 }
 
 .js-item-quickshop {
-        min-height: 30px; 
-	text-align: center; 
-}
-
-.js-product-form.d-inline-block{
-	padding: 10px 40px;
-	display: block;        
-	text-align: center;
+    min-height: 40px;   
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .js-item-quickshop .js-addtocart.btn {
-	padding: 10px 40px;
-	font-size: 0.7rem;
-	font-weight: bold;
-	display: block;        
-	text-align: center;
-	border-radius: 8px; 
-	margin-bottom: 5px;
-        background-color: rgba(253, 93, 61, 1);
+    padding: 10px 40px; 
+    font-size: .8rem;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: rgba(253, 93, 61, 1); 
+    display: inline-block; 
 }
 
-.js-compare-price-display.price-compare{
+.js-compare-price-display.price-compare {
 	color: #0bdd44;
+}
+
+.js-offer-label.label {
+    padding: 6px 12px;
+    font-size: 0.8rem;  
+    font-weight: bold;
+    border-radius: 5px;
+	background-color: #0bdd44;
+	color: #370410;
 }
 
 @media (min-width:768px) {
@@ -119,4 +121,38 @@
 	.js-products-featured-grid {
 		grid-template-columns: repeat(2, 1fr);
 	}
+}
+
+.nav-desktop .js-item-desktop {
+    position: relative; 
+}
+
+.js-desktop-dropdown {
+    position: absolute;      
+    top: 100%;               
+    left: 0;                 
+    width: auto;             
+    white-space: nowrap;     
+    background-color: #370410; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+}
+
+.js-desktop-dropdown a {
+    display: block;         
+    padding: 10px 20px;    
+    color: rgba(253, 93, 61, 1);         
+    text-decoration: none;  
+    transition: background-color 0.2s ease-in-out; 
+}
+
+.js-desktop-dropdown a:hover {
+    background-color: rgba(253, 93, 61, 0.3); 
+}
+
+.js-desktop-dropdown ul {
+    display: flex;
+    flex-direction: column; 
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
