@@ -31,10 +31,24 @@
 	box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
 }
 
+.item-description {
+	background-color: rgba(55, 4, 16, 1);
+}
+
+.item-description .item-name {
+	line-height: 1.3;
+	min-height: 2.6em;
+	color: #fff;
+}
+
 .item-price {
 	font-family: "Montserrat", sans-serif;
 	font-size: 1.25rem;
 	font-weight: 700;
+	color: #0bdd44;
+}
+
+.js-compare-price-display.price-compare {
 	color: #0bdd44;
 }
 
@@ -44,14 +58,43 @@
 	color: #fff;
 }
 
-.item-description .item-name {
-	line-height: 1.3;
-	min-height: 2.6em;
-	color: #fff;
+.js-item-quickshop {
+    min-height: 40px;   
+    text-align: center;
+    box-sizing: border-box;
 }
 
-.item-description {
-	background-color: rgba(55, 4, 16, 1);
+.js-item-quickshop .js-addtocart.btn {
+    padding: 10px 40px; 
+    font-size: .8rem;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: rgba(253, 93, 61, 1); 
+    display: inline-block; 
+}
+
+.js-offer-label.label {
+    padding: 6px 12px;
+    font-size: 0.8rem;  
+    font-weight: bold;
+    border-radius: 5px;
+	background-color: #0bdd44;
+	color: #370410;
+}
+
+.js-stock-label.label{
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgba(253, 93, 61, 1);
+    color: #370410;
+}
+
+.section-featured-home {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .template-home .js-banners.container-fluid {
@@ -74,53 +117,6 @@
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.section-featured-home {
-	max-width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.js-item-quickshop {
-    min-height: 40px;   
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.js-item-quickshop .js-addtocart.btn {
-    padding: 10px 40px; 
-    font-size: .8rem;
-    font-weight: bold;
-    border-radius: 8px;
-    background-color: rgba(253, 93, 61, 1); 
-    display: inline-block; 
-}
-
-.js-compare-price-display.price-compare {
-	color: #0bdd44;
-}
-
-.js-offer-label.label {
-    padding: 6px 12px;
-    font-size: 0.8rem;  
-    font-weight: bold;
-    border-radius: 5px;
-	background-color: #0bdd44;
-	color: #370410;
-}
-
-@media (min-width:768px) {
-	.template-home .js-item-product:hover {
-		transform: translateY(-1rem);
-		box-shadow: 0 8px 24px rgba(0, 0, 0, .5);
-	}
-}
-
-@media (max-width:767px) {
-	.js-products-featured-grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
 }
 
 .nav-desktop .js-item-desktop {
@@ -155,4 +151,67 @@
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+#modal-cart .cart-item-subtotal,
+#modal-cart .js-cart-subtotal,
+#modal-cart .js-cart-total,
+#modal-cart .payment-discount-price-cart {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+#modal-cart .btn-primary {
+	font-size: .8rem;
+    font-weight: bold;
+    border-radius: 8px;
+    color: #370410;
+}
+
+@media (min-width:768px) {
+	.template-home .js-products-featured-grid .js-item-product:hover {
+		transform: translateY(-1rem);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, .5);
+	}
+	.js-products-sale-col .item-image,
+	.js-products-sale-col .item-floating-elements {
+    transition: transform 0.4s ease-in-out !important;
+	}
+    .js-products-sale-col .js-item-product:hover .item-image {
+        transform: scale(1.1) !important;
+
+    } .js-products-sale-col .js-item-product:hover .item-floating-elements {
+        transform: scale(0.85) !important;  
+	}
+	.template-account-login .account-page .row  {
+    	justify-content: center;
+	}
+	.template-account-login .account-page .row  {
+    	justify-content: center;
+	}
+	.template-account-login .page-header h1 {
+    text-align: center;
+	}
+	.template-account-register .account-page .row  {
+    	justify-content: center;
+	}
+	.template-account-register .page-header h1 {
+    text-align: center;
+	}
+}
+
+@media (max-width:767px) {
+	.js-products-featured-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+    .section-featured-home,
+    .js-products-sale-col,
+	.section-banners-home {
+        max-width: 992px; 
+		margin-left: auto;
+        margin-right: auto;
+    }
 }
