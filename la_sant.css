@@ -156,7 +156,8 @@
 #modal-cart .cart-item-subtotal,
 #modal-cart .js-cart-subtotal,
 #modal-cart .js-cart-total,
-#modal-cart .payment-discount-price-cart {
+#modal-cart .payment-discount-price-cart, 
+#modal-cart .d-inline-block {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
@@ -166,6 +167,28 @@
     font-weight: bold;
     border-radius: 8px;
     color: #370410;
+}
+
+.js-product-table.row {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.js-product-table{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding: 0;
+}
+
+.js-product-table .js-item-product {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    display: flex;    
 }
 
 @media (min-width:768px) {
@@ -201,7 +224,8 @@
 }
 
 @media (max-width:767px) {
-	.js-products-featured-grid {
+	.js-products-featured-grid,
+	.js-product-table.row {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
@@ -209,9 +233,11 @@
 @media (min-width: 768px) and (max-width: 1400px) {
     .section-featured-home,
     .js-products-sale-col,
-	.section-banners-home {
+	.section-banners-home,
+	.js-product-table{
         max-width: 992px; 
 		margin-left: auto;
         margin-right: auto;
     }
+	
 }
