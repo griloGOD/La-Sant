@@ -22,8 +22,7 @@
 }
 
 .js-item-product {
-	background-color: rgba(55, 4, 16, 1);
-	border-radius: .7rem;
+	background-color: #fff;
 	overflow: hidden;
 	width: 100%;
 	flex-direction: column;
@@ -32,63 +31,61 @@
 }
 
 .item-description {
-	background-color: rgba(55, 4, 16, 1);
+	background-color: #fff;
 }
 
 .item-description .item-name {
 	line-height: 1.3;
 	min-height: 2.6em;
-	color: #fff;
+	color: #370410;
 }
 
 .item-price {
 	font-family: "Montserrat", sans-serif;
 	font-size: 1.25rem;
 	font-weight: 700;
-	color: #0bdd44;
+	color: #fd5d3d;
 }
 
 .js-compare-price-display.price-compare {
-	color: #0bdd44;
+	color: #fd5d3d;
 }
 
 .payment-discount-price-product-container {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
-	color: #fff;
-}
-
-.js-item-quickshop {
-    min-height: 40px;   
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.js-item-quickshop .js-addtocart.btn {
-    padding: 10px 40px; 
-    font-size: .8rem;
-    font-weight: bold;
-    border-radius: 8px;
-    background-color: rgba(253, 93, 61, 1); 
-    display: inline-block; 
-}
-
-.js-offer-label.label {
-    padding: 6px 12px;
-    font-size: 0.8rem;  
-    font-weight: bold;
-    border-radius: 5px;
-	background-color: #0bdd44;
 	color: #370410;
 }
 
-.js-stock-label.label{
-    padding: 6px 12px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    border-radius: 5px;
-    background-color: rgba(253, 93, 61, 1);
-    color: #370410;
+.js-item-quickshop {
+	min-height: 40px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.js-item-quickshop .js-addtocart.btn {
+	padding: 10px 40px;
+	font-size: .8rem;
+	font-weight: bold;
+	background-color: #370410;
+	color: #fff;
+	display: inline-block;
+}
+
+.js-offer-label.label {
+	padding: 6px 12px;
+	font-size: .8rem;
+	font-weight: bold;
+	background-color: #fd5d3d;
+	color: #fff;
+}
+
+.js-stock-label.label {
+	padding: 6px 12px;
+	font-size: .8rem;
+	font-weight: bold;
+	background-color: #fd5d3d;
+	color: #fff;
 }
 
 .section-featured-home {
@@ -105,12 +102,11 @@
 }
 
 .template-home .js-textbanner.textbanner {
-	border-radius: .7rem;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
 }
 
 .textbanner-text.over-image {
-	background: rgba(253, 93, 61, 1);
+	background: #fd5d3d;
 }
 
 .js-products-sale-col {
@@ -120,75 +116,76 @@
 }
 
 .nav-desktop .js-item-desktop {
-    position: relative; 
+	position: relative;
 }
 
 .js-desktop-dropdown {
-    position: absolute;      
-    top: 100%;               
-    left: 0;                 
-    width: auto;             
-    white-space: nowrap;     
-    background-color: #370410; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: auto;
+	white-space: nowrap;
+	background-color: #370410;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
 }
 
 .js-desktop-dropdown a {
-    display: block;         
-    padding: 10px 20px;    
-    color: rgba(253, 93, 61, 1);         
-    text-decoration: none;  
-    transition: background-color 0.2s ease-in-out; 
+	display: block;
+	padding: 10px 20px;
+	color: #fd5d3d;
+	text-decoration: none;
+	transition: background-color .2s ease-in-out;
 }
 
 .js-desktop-dropdown a:hover {
-    background-color: rgba(253, 93, 61, 0.3); 
+	background-color: rgba(253, 93, 61, .3);
 }
 
 .js-desktop-dropdown ul {
-    display: flex;
-    flex-direction: column; 
-    padding: 0;
-    margin: 0;
-    list-style: none;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
 
-#modal-cart .cart-item-subtotal,
-#modal-cart .js-cart-subtotal,
-#modal-cart .js-cart-total,
-#modal-cart .payment-discount-price-cart, 
-#modal-cart .d-inline-block {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+#modal-cart .cart-item-subtotal, #modal-cart .js-cart-subtotal, #modal-cart .js-cart-total, #modal-cart .payment-discount-price-cart, #modal-cart .d-inline-block {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
 }
 
 #modal-cart .btn-primary {
 	font-size: .8rem;
-    font-weight: bold;
-    border-radius: 8px;
-    color: #370410;
+	font-weight: bold;
+	color: #370410;
 }
 
 .js-product-table.row {
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(4, 1fr);
 }
 
-.js-product-table{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
-    padding: 0;
+.js-product-table {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	padding: 0;
 }
 
 .js-product-table .js-item-product {
-    width: 100%;
-    max-width: none;
-    padding: 0;
-    display: flex;    
+	width: 100%;
+	max-width: none;
+	padding: 0;
+	display: flex;
+}
+
+#single-product {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media (min-width:768px) {
@@ -196,48 +193,50 @@
 		transform: translateY(-1rem);
 		box-shadow: 0 8px 24px rgba(0, 0, 0, .5);
 	}
-	.js-products-sale-col .item-image,
-	.js-products-sale-col .item-floating-elements {
-    transition: transform 0.4s ease-in-out !important;
+	
+	.js-products-sale-col .item-image, .js-products-sale-col .item-floating-elements {
+		transition: transform .4s ease-in-out !important;
 	}
-    .js-products-sale-col .js-item-product:hover .item-image {
-        transform: scale(1.1) !important;
-
-    } .js-products-sale-col .js-item-product:hover .item-floating-elements {
-        transform: scale(0.85) !important;  
+	
+	.js-products-sale-col .js-item-product:hover .item-image {
+		transform: scale(1.1) !important;
 	}
-	.template-account-login .account-page .row  {
-    	justify-content: center;
+	
+	.js-products-sale-col .js-item-product:hover .item-floating-elements {
+		transform: scale(.85) !important;
 	}
-	.template-account-login .account-page .row  {
-    	justify-content: center;
+	
+	.template-account-login .account-page .row {
+		justify-content: center;
 	}
+	
+	.template-account-login .account-page .row {
+		justify-content: center;
+	}
+	
 	.template-account-login .page-header h1 {
-    text-align: center;
+		text-align: center;
 	}
-	.template-account-register .account-page .row  {
-    	justify-content: center;
+	
+	.template-account-register .account-page .row {
+		justify-content: center;
 	}
+	
 	.template-account-register .page-header h1 {
-    text-align: center;
+		text-align: center;
 	}
 }
 
 @media (max-width:767px) {
-	.js-products-featured-grid,
-	.js-product-table.row {
+	.js-products-featured-grid, .js-product-table.row {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
-@media (min-width: 768px) and (max-width: 1400px) {
-    .section-featured-home,
-    .js-products-sale-col,
-	.section-banners-home,
-	.js-product-table{
-        max-width: 992px; 
+@media (min-width:768px)and (max-width:1400px) {
+	.section-featured-home, .js-products-sale-col, .section-banners-home, .js-product-table {
+		max-width: 992px;
 		margin-left: auto;
-        margin-right: auto;
-    }
-	
+		margin-right: auto;
+	}
 }
