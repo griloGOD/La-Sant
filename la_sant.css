@@ -72,6 +72,15 @@
 	display: inline-block;
 }
 
+.btn-primary {
+	padding: 10px 40px;
+	font-size: .8rem;
+	font-weight: bold;
+	background-color: #370410;
+	color: #fff;
+	display: inline-block;
+}
+
 .js-offer-label.label {
 	padding: 6px 12px;
 	font-size: .8rem;
@@ -154,12 +163,6 @@
 	font-weight: 700;
 }
 
-#modal-cart .btn-primary {
-	font-size: .8rem;
-	font-weight: bold;
-	color: #370410;
-}
-
 .js-product-table.row {
 	margin-left: auto;
 	margin-right: auto;
@@ -197,6 +200,11 @@
 	margin-right: auto;
 	max-width: 1200px;
 	padding: 0;
+}
+
+.section-informative-banners {
+    position: relative;
+    padding: 0 0 110px 0;
 }
 
 @media (min-width:768px) {
@@ -254,6 +262,13 @@
 	}
 	.template-category h1.h4 {
         font-size: 1.2rem; 
+    }
+	.js-compare-price-display, .js-price-display {
+        display: block;
+    }
+    .js-item-quickshop .js-addtocart.btn {
+        padding-left: 20px;  
+        padding-right: 20px; 
     }
 }
 
