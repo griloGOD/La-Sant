@@ -266,10 +266,10 @@
 	.js-compare-price-display, .js-price-display {
         display: block;
     }
-    .js-item-quickshop .js-addtocart.btn {
-        padding-left: 20px;  
-        padding-right: 20px; 
-    }
+	.js-item-quickshop .btn {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
 }
 
 @media (min-width:768px)and (max-width:1400px) {
